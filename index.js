@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-app.use('/api', require(`./src/routes/contact.route`));
+app.use('/api', require(`./src/routes/contact.route.js`));
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-  });
+});
